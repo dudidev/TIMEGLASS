@@ -20,9 +20,9 @@ La interfaz está diseñada con estilo glassmorphism (efecto acrílico).
 ## Estructura del componente
 
 /src/app/cronometro/
-- cronometro.component.ts
-- cronometro.component.html
-- cronometro.component.css
+  cronometro.component.ts
+  cronometro.component.html
+  cronometro.component.css
 
 ---
 
@@ -86,4 +86,4 @@ ng build --prod
 `Duvier David`
 
 ## Redes
-`Instagram`: `https://www.instagram.com/dddavid____/`
+`Instagram`: https://www.instagram.com/dddavid____/
