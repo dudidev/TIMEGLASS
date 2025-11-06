@@ -1,10 +1,11 @@
 import { Component, OnDestroy, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Observable, Subscriber, Subscription } from 'rxjs';
+import { DecimalPipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, DecimalPipe],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
