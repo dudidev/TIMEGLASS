@@ -1,59 +1,89 @@
-# Cronometro
+# TimeGlass
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.1.
+TimeGlass es un cronómetro desarrollado en Angular.  
+Implementa un Observable frío para el control del flujo del tiempo utilizando setInterval.  
+Incluye funciones para iniciar, pausar y reiniciar el cronómetro.  
+La interfaz está diseñada con estilo glassmorphism (efecto acrílico).
 
-## Development server
+---
 
-To start a local development server, run:
+## Características
 
+- Interfaz minimalista.
+- Manejo del tiempo con Observable frío.
+- Controles Start, Pause y Reset.
+- Uso de setInterval y unsubscribe para evitar fugas de memoria.
+- Contador en formato horas:minutos:segundos.
+
+---
+
+## Estructura del componente
+
+/src/app/cronometro/
+- cronometro.component.ts
+- cronometro.component.html
+- cronometro.component.css
+
+---
+
+## Requisitos
+
+- Node.js 14 o superior.
+- Angular CLI instalado globalmente.
+
+Instalación del CLI:
+```bash
+npm install -g @angular/cli
+```
+
+---
+
+## Como ejecutar el proyecto
+
+Clonar el repositorio:
+```bash
+git clone https://github.com/dudidev/TIMEGLASS.git
+```
+
+Entrar en el proyecto:
+```bash
+cd TimeGlass
+```
+
+Instalar dependencias: 
+```bash
+npm install
+```
+
+Ejecutar servidor en desarrollo:
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Abrir en el navegador: `http://localhost:4200/`
 
-## Code scaffolding
+--- 
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Compilacion para produccion
 
 ```bash
-ng generate --help
+ng build --prod
 ```
 
-## Building
+---
 
-To build the project run:
+## Conceptos claves utilizados
+| Concepto        | Descripción                                              |
+| --------------- | -------------------------------------------------------- |
+| Observable frío | Solo produce valores cuando existe una suscripción.      |
+| setInterval     | Genera la emisión de valores de tiempo.                  |
+| unsubscribe()   | Libera recursos cuando el cronómetro se pausa o detiene. |
+| Glassmorphism   | Estilo visual basado en transparencia y desenfoque.      |
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Autor
+`Duvier David`
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Redes
+`Instagram`: `https://www.instagram.com/dddavid____/`
